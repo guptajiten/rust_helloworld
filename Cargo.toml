@@ -1,5 +1,5 @@
 [package]
-name = "vscode_debug_example"
+name = "rust_helloworld"
 version = "0.0.1"
 authors = ["jitendra.gupta@nuance.com"]
 edition = "2021"

@@ -62,7 +62,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "vscode_debug_example"
+name = "rust_helloworld"
 version = "0.0.1"
 dependencies = [
  "rand",
