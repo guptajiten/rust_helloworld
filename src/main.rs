@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::{Error, Read};
 use std::collections::{VecDeque};
+use std::thread;
 
 #[allow(unused)]
 #[allow(irrefutable_let_patterns)] // without this a warning will be flagged by compiler for irrefutable if let used in code
@@ -310,6 +311,19 @@ fn main() {
     map.insert("some_other_key".to_string(), "some_other_value".to_string());
 
     // Concurrency
+    {
+        let outer_scope = 432;
+        let join_handle = thread::spawn(move||{ // thread has to take ownership of outer_scope if it is going to use, since we are using 'move' now the outer_scope can not be used by other function anymore
+            outer_scope*2
+        });
+        let result = join_handle.join(); // block until threads completes processing
+        match result {
+            Ok(value) => {
+                println!("{}", value);
+            }
+            Err(_) => {}
+        }
+    }
     
 
     // Stepping in the random crate
