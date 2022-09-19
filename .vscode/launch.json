@@ -5,7 +5,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/target/debug/vscode_debug_example.exe",
+            "program": "${workspaceRoot}/target/debug/rust_helloworld.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
@@ -16,7 +16,7 @@
             "name": "(OSX) Launch",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/target/debug/vscode_debug_example",
+            "program": "${workspaceRoot}/target/debug/rust_helloworld",
             "args": [],
             "cwd": "${workspaceRoot}",
         }

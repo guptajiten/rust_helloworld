@@ -5,9 +5,7 @@
 3. brew install messense/macos-cross-toolchains/x86_64-unknown-linux-gnu
     a. x86_64-unknown-linux-gnu should work for both intel and M1 chips
 4. Enable 'Debug: Allow Breakpoints Everywhere' in VSCODE 
-5. You'll need to install an extension. Which one depends on your platform.
-    a. C/C++ (Windows)
-    b. CodeLLDB (OS X / Linux)
+5. You'll need to install an extension. Which one depends on your platform. - CodeLLDB (OS X / Linux)
 6. rustc --version
 7. cargo build
 8. Open .vscode/ws.code-workspace
